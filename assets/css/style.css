@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+  font-size: 16.2px;
+  line-height: 19px;
+  letter-spacing: 5.4px;
+}
+
+.nav-link {
+  color: #846219 !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+button:focus{
+  outline: 0;
+}
+
+#btn-menu{
+  position: fixed;
+  left: 0;
+  z-index: 3;
+}
+
+/* PAGE 1 */
+
+.min-h-100 {
+  min-height: 100vh;
+}
+
+.dark-title {
+  color: #716565;
+  font-size: 82.2px;
+  line-height: 96px;
+}
+
+img {
+  opacity: 100%;
+  background-blend-mode: multiply;
+}
+
+#img-1 {
+  width: 682px;
+  height: 335px;
+}
+
+.bg-gray {
+  background-color: #e9e9e9;
+}
+
+.pb-10{
+  padding-bottom: 10vh;
+}
+
+/* PAGE 2 */
+
+.mt-10 {
+  margin-top: 10vh;
+}
+
+.mb-10 {
+  margin-bottom: 10vh;
+}
+
+.ml-7 {
+  margin-left: 70px;
+}
+
+.light-title {
+  color: white;
+  font-size: 69.2px;
+  line-height: 81px;
+}
+
+.light-subtitle {
+  color: white;
+  font-size: 48.2px;
+  line-height: 56px;
+}
+
+#img-2 {
+  width: 1038px;
+  height: 689px;
+}
+
+.d-txt {
+  line-height: 100%;
+  vertical-align: bottom;
+}
+
+.bg-blue {
+  background-color: #506fa9;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #e9e9e9 !important;
+}
+
+.footer-title {
+  color: #716565;
+  font-size: 27.2px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.footer-text {
+  color: #716565;
+  font-size: 16.2px;
+  line-height: 19px;
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+  #brand {
+    display: none !important;
+  }
+}
+
+@media (max-width: 457px) {
+  .dark-title {
+    font-size: 15vw !important;
+  }
+}
+
+@media (max-width: 483px) {
+  footer {
+    justify-content: center;
+  }
+  .footer-title {
+    text-align: center;
+  }
+  .footer-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #title {
+    text-align: left !important;
+  }
+  #img-1 {
+    min-width: 50vw;
+  }
+  #img-2 {
+    max-height: 300px;
+    padding-left: 30vw;
+  }
+}
+
+@media (max-width: 991px) {
+  #brand,
+  #menu-right {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #btn-menu, #collapseMenu {
+    display: none;
+  }
+}
